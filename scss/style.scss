@@ -1,0 +1,39 @@
+@import "../plugins/reset.min.css";
+
+$maxWidth: 1110;
+
+$gold: #d1a954;
+$black: #333333;
+
+@mixin OpenSansCondensed-Light {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 300;
+}
+@mixin OpenSansCondensed-Bold {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 700;
+}
+@mixin OpenSans {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $width: $maxWidth - 320;
+  $fnSize: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$width}));
+
+  font-size: $fnSize;
+
+  @media (min-width: #{$maxWidth + px}) {
+    font-size: $pcSize + px;
+  }
+}
+
+.wrapper {
+  max-width: $maxWidth + px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+@import "_header.scss";
