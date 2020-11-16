@@ -1,22 +1,10 @@
 @import "../plugins/reset.min.css";
+@import "_font.scss";
 
 $maxWidth: 1110;
 
 $gold: #d1a954;
 $black: #333333;
-
-@mixin OpenSansCondensed-Light {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-weight: 300;
-}
-@mixin OpenSansCondensed-Bold {
-  font-family: "Open Sans Condensed", sans-serif;
-  font-weight: 700;
-}
-@mixin OpenSans {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-}
 
 @mixin adaptiv-font($pcSize, $mobSize) {
   $addSize: $pcSize - $mobSize;
@@ -30,6 +18,10 @@ $black: #333333;
   }
 }
 
+body{
+  color: #fff;
+}
+
 .wrapper {
   max-width: $maxWidth + px;
   margin: 0 auto;
@@ -37,3 +29,4 @@ $black: #333333;
 }
 
 @import "_header.scss";
+@import "_main.scss";
