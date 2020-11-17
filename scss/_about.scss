@@ -1,0 +1,45 @@
+.about {
+  background-color: $black;
+  padding: 150px 0;
+
+  &__heading {
+    margin-bottom: 100px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__about-box {
+    width: 40%;
+  }
+
+  &__info-box {
+    width: 20%;
+  }
+
+  &__img-box {
+    width: 30%;
+  }
+}
+
+.about-box {
+  &__title {
+    margin-bottom: 40px;
+  }
+}
+
+.info-box {
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__subtitle {
+    margin-top: 15px;
+  }
+
+  &__item {
+    margin-bottom: 25px;
+  }
+}

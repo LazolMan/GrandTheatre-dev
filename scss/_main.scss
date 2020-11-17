@@ -2,7 +2,7 @@
   background-image: url(../img/main/bg_large.jpg);
   background-size: cover;
 
-  &__box {
+  &__content {
     padding: 250px 0;
     display: flex;
     justify-content: space-between;
@@ -10,7 +10,7 @@
   }
 }
 
-.main-text {
+.main-box {
   width: 540px;
 
   &__title {
@@ -22,30 +22,14 @@
   }
 
   &__description {
-    @include OpenSans();
-    font-size: 14px;
-    line-height: 150%;
     margin-bottom: 50px;
-  }
-
-  &__button {
-    @include OpenSansCondensed-Bold();
-    font-size: 18px;
-    text-transform: uppercase;
-    background-color: $gold;
-    padding: 15px 40px;
-    letter-spacing: 0.1em;
   }
 }
 
 .main-slider {
-  width: 350px;
+  width: 370px;
 
   &__bttns {
-    @include OpenSansCondensed-Bold();
-    font-size: 18px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,21 +40,22 @@
   &__bttn-next {
     cursor: pointer;
   }
+
+  &__bg {
+    background-color: $gold;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: -9999;
+  }
+
+  &__bg-img {
+    opacity: 0.15;
+  }
 }
 
 .swiper {
   &-container {
-    width: 100%;
-    text-align: center;
+    height: 510px;
   }
-
-  &-slide img {
-    width: 100%;
-    height: auto;
-  }
-
-  // &-button-prev {
-  //     position: static;
-  //     margin-top: 55px;
-  //   }
 }

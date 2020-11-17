@@ -18,7 +18,7 @@ $black: #333333;
   }
 }
 
-body{
+body {
   color: #fff;
 }
 
@@ -28,5 +28,44 @@ body{
   padding: 0 10px;
 }
 
+.heading {
+  @include OpenSansCondensed-Light();
+  font-size: 48px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title {
+  @include OpenSansCondensed-Bold();
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  @include OpenSansCondensed-Bold();
+  font-size: 16px;
+  letter-spacing: 0.05em;
+}
+
+.description {
+  @include OpenSans();
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.colored {
+  color: $gold;
+}
+
+.button {
+  background-color: $gold;
+  padding: 15px 40px;
+  letter-spacing: 0.1em;
+}
+
 @import "_header.scss";
+@import "_sidebar.scss";
 @import "_main.scss";
+@import "_about.scss";

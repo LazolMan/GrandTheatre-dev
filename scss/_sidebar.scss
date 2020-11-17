@@ -1,0 +1,42 @@
+.sidebar {
+  position: fixed;
+  padding: 0 25px;
+  height: 100%;
+  background-color: rgba($color: #333, $alpha: 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 9;
+///
+///
+///
+  &__title {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(-180deg);
+    margin-bottom: 150px;
+
+    &::after {
+      content: "";
+      position: relative;
+      display: block;
+      background-color: white;
+      height: 80px;
+      width: 3px;
+      bottom: 50%;
+      left: 9px;
+      //transform: translate(9px, 0);
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__link{
+    margin-bottom: 30px;
+  }
+}

@@ -1,58 +1,45 @@
 <section class="main">
-  <div class="main__box wrapper">
-    <div class="main__text-box main-text">
-      <h1 class="main-text__title">Большой театр</h1>
-      <p class="main-text__description description">
+  <div class="main__content wrapper">
+    <div class="main__main-box main-box">
+      <h1 class="main-box__title">Большой театр</h1>
+      <p class="main-box__description description">
         Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с
         1886 года — Петербургская консерватория. Первое постоянное в
         Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных
         зданий в Европе XVIII.
       </p>
-      <a href="#" class="main-text__button button">афиша</a>
+      <a href="#" class="main-box__button button title">афиша</a>
     </div>
 
-    <!-- <ul class="main-slider__list">
-            <li class="main-slider__item">
-                <img src="img/main/slider_1.jpg" alt="">
-            </li>
-            <li class="main-slider__item">
-                <img src="img/events/event_1.jpg" alt="">
-            </li>
-            <li class="main-slider__item">
-                <img src="img/events/event_2.jpg" alt="">
-            </li>
-        </ul>
-
-        <span class="main-slider__bttn-prev">Пред</span>
-        <span class="main-slider__bttn-next">След</span> -->
-
     <div class="main-slider">
-      <div class="swiper-container">
+      <div class="swiper-container main-slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img data-src="img/main/slider_1.jpg" class="swiper-lazy" />
-            <div
-              class="swiper-lazy-preloader swiper-lazy-preloader-white"
-            ></div>
+            <img data-src="img/main/slider_1.jpg" class="swiper-lazy main-slider__slide" />
+            <div class="main-slider__bg">
+              <img class="main-slider__bg-img" src="img/main/slider_1.jpg" alt="slide bg">
+            </div>
           </div>
+
           <div class="swiper-slide">
-            <img data-src="img/main/slider_1.jpg" class="swiper-lazy" />
-            <div
-              class="swiper-lazy-preloader swiper-lazy-preloader-white"
-            ></div>
+            <img data-src="img/main/slider_1.jpg" class="swiper-lazy main-slider__slide" />
+            <div class="main-slider__bg">
+              <img class="main-slider__bg-img" src="img/main/slider_1.jpg" alt="slide bg">
+            </div>
           </div>
+
           <div class="swiper-slide">
-            <img data-src="img/main/slider_1.jpg" class="swiper-lazy" />
-            <div
-              class="swiper-lazy-preloader swiper-lazy-preloader-white"
-            ></div>
+            <img data-src="img/main/slider_1.jpg" class="swiper-lazy main-slider__slide" />
+            <div class="main-slider__bg">
+              <img class="main-slider__bg-img" src="img/main/slider_1.jpg" alt="slide bg">
+            </div>
           </div>
         </div>
       </div>
 
       <div class="main-slider__bttns">
-        <span class="main-slider__bttn-prev icon-left">ПРЕД</span>
-        <span class="main-slider__bttn-next icon-right">СЛЕД</span>
+        <span class="main-slider__bttn-prev icon-left title">ПРЕД</span>
+        <span class="main-slider__bttn-next icon-right title">СЛЕД</span>
       </div>
     </div>
   </div>
