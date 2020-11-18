@@ -1,4 +1,4 @@
-var slider = new Swiper(".swiper-container", {
+let mainSlider = new Swiper(".main-slider__container", {
   direction: "horizontal",
   loop: true,
   lazy: true,
@@ -8,4 +8,11 @@ var slider = new Swiper(".swiper-container", {
     nextEl: ".main-slider__bttn-next",
     prevEl: ".main-slider__bttn-prev",
   },
+});
+
+let eventsSlider = new Swiper(".events-slider__container", {
+  direction: "horizontal",
+  loop: true,
+  lazy: true,
+  slidesPerView: 2.5,
 });

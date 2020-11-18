@@ -1,5 +1,5 @@
 .main {
-  background-image: url(../img/main/bg_large.jpg);
+  background-image: url(../img/main/bg.jpg);
   background-size: cover;
 
   &__content {
@@ -29,16 +29,8 @@
 .main-slider {
   width: 370px;
 
-  &__bttns {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 35px;
-  }
-
-  &__bttn-prev,
-  &__bttn-next {
-    cursor: pointer;
+  &__container {
+    height: 510px;
   }
 
   &__bg {
@@ -52,10 +44,16 @@
   &__bg-img {
     opacity: 0.15;
   }
-}
 
-.swiper {
-  &-container {
-    height: 510px;
+  &__bttns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+  }
+
+  &__bttn-prev,
+  &__bttn-next {
+    cursor: pointer;
   }
 }
