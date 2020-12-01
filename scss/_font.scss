@@ -33,13 +33,17 @@
   line-height: 1;
 }
 
-.icon-right::after {
+.icon-right::before {
   content: "\e906";
-  margin-left: 25px;
+  position: absolute;
+  right: -25px;
+  transform: translate(100%, 0);
 }
 .icon-left:before {
   content: "\e907";
-  margin-right: 25px;
+  position: absolute;
+  left: -25px;
+  transform: translate(-100%, 0);
 }
 .icon-search:before {
   content: "\e900";
@@ -58,4 +62,10 @@
 }
 .icon-star:before {
   content: "\e905";
+}
+.icon-close:before {
+  content: "\f00d";
+}
+.icon-menu:before {
+  content: "\f0c9";
 }

@@ -1,6 +1,9 @@
 .about {
-  background-color: $black;
   padding: 150px 0;
+
+  @media (max-width: 768px) {
+    padding: 80px 0;
+  }
 
   &__heading {
     margin-bottom: 100px;
@@ -9,18 +12,44 @@
   &__content {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      text-align: center;
+    }
   }
 
   &__about-box {
     width: 40%;
+
+    @media (max-width: 992px) {
+      width: 65%;
+    }
+
+    @media (max-width: 576px) {
+      width: 100%;
+      margin-bottom: 50px;
+    }
   }
 
   &__info-box {
     width: 20%;
+
+    @media (max-width: 992px) {
+      width: 30%;
+    }
+
+    @media (max-width: 576px) {
+      width: 100%;
+    }
   }
 
   &__img-box {
     width: 30%;
+
+    @media (max-width: 992px) {
+      display: none;
+    }
   }
 }
 
@@ -31,6 +60,13 @@
 }
 
 .info-box {
+  &__list {
+    @media (max-width: 576px) {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
   &__title {
     margin-bottom: 40px;
   }
@@ -41,5 +77,15 @@
 
   &__item {
     margin-bottom: 25px;
+
+    // @media (max-width: 768px) {
+    //   width: 50%;
+    // }
+  }
+}
+
+.img-box {
+  &__img {
+    max-width: 100%;
   }
 }

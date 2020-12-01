@@ -19,13 +19,23 @@ $black: #333333;
 }
 
 body {
+  background-color: $black;
   color: #fff;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
   max-width: $maxWidth + px;
   margin: 0 auto;
   padding: 0 10px;
+
+  @media (max-width: 992px) {
+    max-width: 690px;
+  }
+
+  @media (max-width: 576px) {
+    max-width: 500px;
+  }
 }
 
 .heading {
@@ -63,11 +73,45 @@ body {
   background-color: $gold;
   padding: 15px 40px;
   letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: 0.5s all ease-in-out;
+  position: relative;
+
+  &:active{
+    top: 2px;
+  }
+
+  &:hover{
+    background-color: #9e7f3c;
+  }
+}
+
+.link {
+  display: inline-block;
+  transition: 0.3s all ease-in-out;
+  position: relative;
+
+  &::after {
+    content: "";
+    margin-top: 5px;
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: #fff;
+    transition: 0.3s all ease-in-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
 }
 
 @import "_header.scss";
 @import "_sidebar.scss";
 @import "_main.scss";
 @import "_about.scss";
-@import '_events.scss';
-@import '_rating.scss';
+@import "_events.scss";
+@import "_rating.scss";
+@import "_partners.scss";
+@import "_contacts.scss";
+@import "_footer.scss";

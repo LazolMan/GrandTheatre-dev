@@ -3,25 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="plugins/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="plugins/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="plugins/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="plugins/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="plugins/favicon/safari-pinned-tab.svg" color="#333333" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300;700&display=swap"
       rel="stylesheet"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="plugins/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="plugins/swiper-bundle.min.js"></script>
 
     <title>Большой театр</title>
   </head>
   <body>
     @@include('_header.html') @@include('_sidebar.html') @@include('_main.html')
     @@include('_about.html') @@include('_events.html') @@include('_rating.html')
+    @@include('_partners.html') @@include('_contacts.html')
+    @@include('_footer.html')
 
     <script src="js/script.js"></script>
   </body>

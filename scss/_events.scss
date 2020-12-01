@@ -1,9 +1,16 @@
 .events {
-  background-color: $black;
   padding-bottom: 150px;
+
+  @media (max-width: 576px) {
+    padding-bottom: 80px;
+  }
 
   &__heading {
     margin-bottom: 100px;
+
+    @media (max-width: 576px) {
+      margin-bottom: 60px;
+    }
   }
 }
 
@@ -11,13 +18,19 @@
   &__slide {
     &:hover {
       .events-slider__img-cover {
-        display: none;
+        opacity: 0;
+        transition: 0.5s all ease-in-out;
       }
 
       .events-slider__icon {
-        display: inline;
+        opacity: 100%;
+        transition: 0.5s all ease-in-out;
       }
     }
+  }
+
+  &__img{
+    width: 100%;
   }
 
   &__subtitle {
@@ -42,10 +55,10 @@
     background-color: rgba($black, 0.65);
     height: 100%;
     width: 100%;
+    transition: 0.5s all ease-in-out;
   }
 
-  &__icon{
-    display: none;
+  &__icon {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -54,5 +67,7 @@
     background-color: $gold;
     border-radius: 100%;
     font-size: 20px;
+    transition: 0.5s all ease-in-out;
+    opacity: 0;
   }
 }
