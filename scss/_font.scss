@@ -1,13 +1,60 @@
+@font-face {
+  font-family: "OpenSansCondensed-Light";
+  src: url("../fonts/OpenSansCondensed-Light.eot");
+  src: url("../fonts/OpenSansCondensed-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/OpenSansCondensed-Light.svg#OpenSansCondensed-Light")
+      format("svg"),
+    url("../fonts/OpenSansCondensed-Light.ttf") format("truetype"),
+    url("../fonts/OpenSansCondensed-Light.woff") format("woff");
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../fonts/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans-Regular.eot?#iefix") format("embedded-opentype");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans.svg#OpenSans") format("svg"),
+    url("../fonts/OpenSans.ttf") format("truetype"),
+    url("../fonts/OpenSans.woff") format("woff");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSansCondensed-Bold";
+  src: url("../fonts/OpenSansCondensed-Bold.eot");
+  src: url("../fonts/OpenSansCondensed-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/OpenSansCondensed-Bold.svg#OpenSansCondensed-Bold")
+      format("svg"),
+    url("../fonts/OpenSansCondensed-Bold.ttf") format("truetype"),
+    url("../fonts/OpenSansCondensed-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
 @mixin OpenSansCondensed-Light {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "OpenSansCondensed-Light", sans-serif;
   font-weight: 300;
 }
 @mixin OpenSansCondensed-Bold {
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "OpenSansCondensed-Bold", sans-serif;
   font-weight: 700;
 }
 @mixin OpenSans {
-  font-family: "Open Sans", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: 400;
 }
 
